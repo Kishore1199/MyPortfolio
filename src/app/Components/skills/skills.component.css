@@ -1,0 +1,134 @@
+
+.body{
+    /* color: black; */
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    z-index: 100;
+}
+
+.background-image {
+    color: black;
+  
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.background1-image {
+    color: white;
+    
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+.borders{
+    /* border: 2px solid #caaaff;
+    border-radius: 10px;
+    background-color: #caaaff; */
+    /* padding: 20px; */
+    padding-left: 165px;
+    padding-right: 125px;
+    /* width: 140%; */
+  }
+
+  /* .skills-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .skill-item {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+  } */
+
+
+
+  .skills-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    background-color: #caaaff;
+    border: 1px solid #caaaff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    
+  }
+
+  /* .skill-item:hover {
+    color: black;
+        background-color: #929292b2;
+    border: 1px solid #adaaaac9;
+    background-color: #c5c4c4b6;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  } */
+  
+
+
+  .skill-item:hover {
+    color: black;
+    background-color: #caaaff;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 26px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skill-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 250;
+  }
+  
+  .skill-item p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #404040;
+  }
+  
+
+  /* .custom-line {
+    border: 0;
+    height: 1px;
+    background-color: #b2b2b2b6; 
+    width: 100%; 
+    margin: 20px auto;
+} */
+
+.custom-line {
+  border: 0;
+  height: 1px;
+  background-color: #6562628d; /* Change the color */
+  width: 100%; /* Change the width */
+  margin: 20px auto; /* Center the line */
+}

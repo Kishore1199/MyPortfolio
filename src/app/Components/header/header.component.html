@@ -1,0 +1,64 @@
+<h1>header works!</h1>
+
+  
+<div class="header">
+   
+    <div class="row">
+      <div class="col-sm-4" style="text-align: left;">
+
+
+
+        <!-- <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span></a>
+ 
+          <div class="logo">
+              <a href="index.html">MENU</a>
+           </div>		      
+ 
+          <nav id="main-nav-wrap">
+           <ul class="main-navigation">
+             <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+             <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+             <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+             <li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+             <li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+             <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+             <li><a href="styles.html" title="">Style Demo</a></li>				
+           </ul>
+         </nav>    		
+        </div> /top-bar  -->
+
+
+        <!-- <mat-toolbar color="primary">
+          <button mat-icon-button aria-label="Menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </mat-toolbar> -->
+        
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+        <p style="font-size: large;margin-top: 10px;font-weight: bolder;">MY PORTFOLIO</p>
+      </div>
+      <div class="modal-footer col-sm-4" style="text-align: right;">
+        <div *ngIf="themeButtonText === 'Light Theme' && screentext ==='exit'">
+          <button class="btn btn-back h-space"(click)="fullscreen()"><i class='bx bx-exit-fullscreen' ></i> Exit Screen</button>
+          <button class="btn btn-back h-space" (click)="toggleTheme()"><i class='bx bx-sun' ></i> Light Mode</button>
+        </div>
+        <div *ngIf="themeButtonText === 'Dark Theme' && screentext ==='exit'">
+          <button class="btn btn-primary h-space"(click)="fullscreen()"><i class='bx bx-exit-fullscreen' ></i> Exit Screen</button>
+          <button class="btn btn-primary h-space" (click)="toggleTheme()"><i class='bx bx-moon'></i> Dark Mode</button>
+        </div>
+        <div *ngIf="themeButtonText === 'Light Theme' && screentext ==='full'">
+          <button class="btn btn-back h-space"(click)="fullscreen()"><i class='bx bx-fullscreen' ></i> Full Screen</button>
+          <button class="btn btn-back h-space" (click)="toggleTheme()"><i class='bx bx-sun' ></i> Light Mode</button>
+        </div>
+        <div *ngIf="themeButtonText === 'Dark Theme' && screentext ==='full'">
+          <button class="btn btn-primary h-space"(click)="fullscreen()"><i class='bx bx-fullscreen' ></i> Full Screen</button>
+          <button class="btn btn-primary h-space" (click)="toggleTheme()"><i class='bx bx-moon'></i> Dark Mode</button>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- <app-sidemain></app-sidemain> -->

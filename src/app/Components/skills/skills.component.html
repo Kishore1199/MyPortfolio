@@ -1,0 +1,53 @@
+
+
+
+<div [class]="isDarkMode? 'background1-image':'background-image'">
+    <div class="body ">
+        <!-- <p>skills works!</p> -->
+        <!-- <mat-grid-list cols="4"  rowHeight="2:1">
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+        </mat-grid-list> -->
+
+        <!-- <div class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+              <div *ngFor="let skill of skills" class="skill-item">
+                {{ skill }}
+              </div>
+            </div>
+          </div> -->
+
+<div class="col-lg-12 borders">
+    
+
+          <div class="skills-section">
+            <hr class="custom-line">
+            <h2>My Skills</h2>
+            <hr class="custom-line">
+            <!-- <br> -->
+            <div class="skills-list">
+              <div *ngFor="let skill of skills" class="skill-item">
+                <h3>{{ skill.name }}</h3>
+                <p>{{ skill.level }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+    </div>
+</div>
