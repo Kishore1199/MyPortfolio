@@ -1,0 +1,46 @@
+$bgColor_light: white;
+$bgColor_dark: black;
+
+$textColor_light: black;
+$textColor_dark: white;
+
+$borderColor_light: black;
+$borderColor_dark: white;
+
+// mixin that enables css variables in light mode
+@mixin lighten() {
+  --bgColor: #{$bgColor_light};
+  --textColor: #{$textColor_light};
+  --borderColor: #{$borderColor_light};
+}
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  --bgColor: #{$bgColor_dark};
+  --textColor: #{$textColor_dark};
+  --borderColor: #{$borderColor_dark};
+}
+
+[data-theme="light"] {
+    --header-background-color: #ffffff;
+    --header-border-color: #e5e8ea;
+    --header-menu-item-color: #231f20;
+    --header-theme-switch-background-color: #cccccc;
+    --header-theme-switch-before-background-color: #ffffff;
+    --header-theme-switch-checked-background-color: #2196f3;
+  
+    --main-content-background-color: #ffffff;
+    --main-content-text-color: #231f20;
+  }
+  
+  [data-theme="dark"] {
+    --header-background-color: #2c3c93;
+    --header-border-color: #e5e8ea;
+    --header-menu-item-color: #ffffff;
+    --header-theme-switch-background-color: #cccccc;
+    --header-theme-switch-before-background-color: #ffffff;
+    --header-theme-switch-checked-background-color: #2196f3;
+  
+    --main-content-background-color: #231f20;
+    --main-content-text-color: #ffffff;
+  }

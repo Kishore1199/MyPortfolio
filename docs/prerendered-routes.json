@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/all_in_one",
+    "/contact",
+    "/education",
+    "/experience",
+    "/home",
+    "/personal",
+    "/proof",
+    "/skills"
+  ]
+}
