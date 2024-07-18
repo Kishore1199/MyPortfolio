@@ -1,6 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import { FullscreenService } from '../../service/fullscreen.service';
-import { BreakpointObserver } from '@angular/cdk/layout';
 import { DOCUMENT } from '@angular/common';
 import { SharedService } from '../../service/shared.service';
 
@@ -22,8 +21,7 @@ export class HomeComponent {
 
   constructor(
     private themeService: FullscreenService,
-    @Inject(DOCUMENT) private document: Document,
-    private observer: BreakpointObserver,private sharedService:SharedService
+    @Inject(DOCUMENT) private document: Document,private sharedService:SharedService
   ) {
    
   }

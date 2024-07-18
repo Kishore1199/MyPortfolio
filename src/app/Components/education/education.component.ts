@@ -1,4 +1,3 @@
-import { BreakpointObserver } from '@angular/cdk/layout';
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { FullscreenService } from '../../service/fullscreen.service';
@@ -23,8 +22,7 @@ export class EducationComponent {
 
   constructor(
     private themeService: FullscreenService,
-    @Inject(DOCUMENT) private document: Document,
-    private observer: BreakpointObserver,private sharedService:SharedService
+    @Inject(DOCUMENT) private document: Document,private sharedService:SharedService
   ) {
    
   }

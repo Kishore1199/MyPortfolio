@@ -2,7 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { FullscreenService } from '../../service/fullscreen.service';
 import { DOCUMENT } from '@angular/common';
 import { SharedService } from '../../service/shared.service';
-import { BreakpointObserver } from '@angular/cdk/layout';
 
 
 @Component({
@@ -13,7 +12,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 export class HeaderComponent {
 
   elem: any;
-  constructor(private themeService: FullscreenService,@Inject(DOCUMENT) private document: any,private observer: BreakpointObserver,
+  constructor(private themeService: FullscreenService,@Inject(DOCUMENT) private document: any,
  private sharedService:SharedService) {
    this.elem = document.documentElement;
  
