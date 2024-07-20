@@ -33,4 +33,17 @@ export class HomeComponent {
       this.document.body.classList.remove('dark');
     }
 }
+
+
+isVisible = false;
+message = '';
+
+showPopup(message: string) {
+  this.message = message;
+  this.isVisible = true;
+
+  setTimeout(() => {
+    this.isVisible = false;
+  }, 1500);
+}
 }

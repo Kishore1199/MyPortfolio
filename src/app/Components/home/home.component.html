@@ -1,4 +1,13 @@
+<div class="popup" *ngIf="isVisible">
+  <div class="popup-content">
+    <h4>{{ message }}</h4>
+  </div>
+</div>
+
+
+
 <div [class]="isDarkMode? 'background1-image':'background-image'"> 
+  
     <div class="body ">
     
           <div class="row">
@@ -15,6 +24,15 @@
             </h1>
             <br>
 
+
+
+            
+            
+            <!-- <button (click)="showPopup('Thanks for Downloading!')">Show Popup</button> -->
+            
+
+
+
 <div class="border-animation" style="text-align: center;">
             <div class="image-container">
               <img src="assets/images/Kishore's.jpg" alt="Image" class="animated-image" />
@@ -26,7 +44,7 @@
              
               <br>
               <div class="modal-footer" style="text-align: center;">
-              <a href="assets/resume/Kishore's_Resume.docx" download="Kishore's_Resume.docx"><button class="btn btn-back h-space"><i class='bx bxs-download'></i> Resume</button></a>
+              <a href="assets/resume/Kishore's_Resume.docx" download="Kishore's_Resume.docx"><button class="btn btn-back h-space" (click)="showPopup('Thanks for Downloading!')"><i class='bx bxs-download'></i> Resume</button></a>
               <a href="https://www.linkedin.com/in/kishore-v-a64b2417b/" target="_blank"><button class="btn btn-primary h-space"><i class='bx bx-bookmark-plus'></i> Hire Me</button></a>
     
               </div>
