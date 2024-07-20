@@ -34,7 +34,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule.forRoot(),
   ],
   providers: [
   

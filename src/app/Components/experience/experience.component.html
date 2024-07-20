@@ -13,7 +13,7 @@
               <div class="container mt-5">
                 <carousel [interval]="interval">
                   <slide>
-              <div class="card" style="background-color: #caaaff;">
+              <div [class]="isDarkMode? 'card1':'card'" style="background-color: #caaaff;">
                 <div class="row">
 
                   <h1 class="animated-text" style="text-align: center;padding-top: 20px;">
@@ -73,7 +73,7 @@
           </carousel>
         </div>
 
-              <!-- <br> -->
+              <br>
             </div>
           </div>
     

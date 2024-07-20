@@ -1,6 +1,6 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FullscreenService } from '../../service/fullscreen.service';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { SharedService } from '../../service/shared.service';
 
 @Component({
@@ -14,14 +14,16 @@ export class ExperienceComponent {
 
   isDarkMode=true;
   ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
     this.updateTheme();
     this.sharedService.sharedData$.subscribe(data => {
       this.isDarkMode = data;
     });
-  
+   }
   }
 
   constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
     private themeService: FullscreenService,
     @Inject(DOCUMENT) private document: Document,private sharedService:SharedService
   ) {
