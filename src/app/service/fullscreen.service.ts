@@ -63,7 +63,7 @@ export class FullscreenService {
     if (this.document) {
       const themeLink = this.document.querySelector('#theme-link');
       const toggleBtn = this.document.querySelector("#toggle-btn");
-      console.log(toggleBtn?.textContent)
+     // console.log(toggleBtn?.textContent)
 
       if (themeLink) {
         themeLink.remove();
@@ -74,10 +74,10 @@ export class FullscreenService {
       linkElement.rel = 'stylesheet';
 
       if (this.darkModeEnabled) {
-        console.log("1")
+        console.log("dark")
         linkElement.href = 'assets/css/dark-theme.css';
       } else {
-        console.log("2")
+        console.log("light")
         linkElement.href = 'assets/css/light-theme.css';
       }
 
